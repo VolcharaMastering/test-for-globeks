@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.scss";
+import getCards from "./api/api";
+import CardList from "./components/CardsList/CardsList";
 
 function App() {
-  // const [popupOpen, setpopupOpen] = useState(false);
+  // const [popupOpen, setPopupOpen] = useState(false);
+  const [cards, setCards] = useState([]);
 
+  useEffect(() => {
+    setCards(getCards());
+  }, []);
   return (
     <>
-      <div></div>
-      
+      <main className="main">
+        {/* <SearchBar /> */}
+        <CardList cards={cards} />
+      </main>
     </>
   );
 }
