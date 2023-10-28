@@ -1,17 +1,19 @@
 import axios from "axios";
 
-const url = 'http://127.0.0.1:3000';
+const url = "http://localhost:3000";
 
 const getCards = async () => {
   try {
     const response = await axios.get(url);
     console.log(response);
+    return response;
   } catch (error) {
     console.error(error);
+    return error;
   }
 };
 
-const findCard = async ({ searchValue }) => {
+const getCardByValue = async ({ searchValue }) => {
   try {
     const response = await axios.get(`${url}?term=${searchValue}`);
     console.log(response);
@@ -22,4 +24,4 @@ const findCard = async ({ searchValue }) => {
   }
 };
 
-export { getCards, findCard };
+export { getCards, getCardByValue };

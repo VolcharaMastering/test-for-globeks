@@ -1,12 +1,15 @@
-function Card({ title, usersData }) {
+/* eslint-disable react/prop-types */
+import './Card.scss'
+
+function Card({ name, phone, email }) {
   return (
     <div className="card">
-      <h1 className="card-title">{title}</h1>
-      <div className="card-mail__box">
-        <p>{usersData}</p>
+      <h1 className="card__title">{name}</h1>
+      <div className="card__mail-box">
+        <p>{email}</p>
       </div>
-      <div className="card-phone__box">
-        <p>{usersData}</p>
+      <div className="card__phone-box">
+        <p>{phone}</p>
       </div>
     </div>
   );
