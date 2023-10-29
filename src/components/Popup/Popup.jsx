@@ -2,20 +2,22 @@
 import { useSelector, useDispatch } from 'react-redux';
 import PopupOverlay from '../PopupOverlay/PopupOverlay';
 import { setChosenCard, togglePopup } from '../../store/slices/togglePopupSlice';
+import './Popup.scss'
 
 function Popup() {
     const dispatch = useDispatch();
 
     const handleClosePopup = () =>{
         dispatch(setChosenCard({}))
-        dispatch(togglePopup(true))
+        dispatch(togglePopup(false))
     }
-    
-  const showCard = useSelector((state) => state.togglePopup.setChosenCard);
+
+  const showCard = useSelector((state) => state.togglePopup.chosenCard);
   return (
+    <>
+    <PopupOverlay onClose={handleClosePopup} />
       <section className="popup">
         <button className='popup__close' />
-        <PopupOverlay onClose={handleClosePopup} />
       <h1 className="popup__title">{showCard.name}</h1>
       <ul>
         <li className="popup__info-box">
@@ -44,6 +46,7 @@ function Popup() {
       <p className="popup__data">{showCard.address}</p>
       </div>
     </section>
+    </>
   );
 }
 

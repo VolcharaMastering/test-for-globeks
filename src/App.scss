@@ -15,6 +15,7 @@ $proxima-font: proxima-nova, sans-serif;
 
 $main-color: #262c40;
 $text-color: #8189a3;
+$popup-background: #BCC3D0;
 
 @mixin h1-card {
   @include font-styles($proxima-font);

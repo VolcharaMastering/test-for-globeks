@@ -5,7 +5,6 @@ const url = "http://localhost:3000";
 const getCards = async () => {
   try {
     const response = await axios.get(url);
-    console.log(response);
     return response;
   } catch (error) {
     console.error(error);
@@ -13,10 +12,9 @@ const getCards = async () => {
   }
 };
 
-const getCardByValue = async ({ searchValue }) => {
+const getCardByValue = async ( searchValue ) => {
   try {
     const response = await axios.get(`${url}?term=${searchValue}`);
-    console.log(response);
     return response;
   } catch (error) {
     console.error(error);
