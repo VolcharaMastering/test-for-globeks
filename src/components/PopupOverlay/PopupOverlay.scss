@@ -1,0 +1,17 @@
+@import "../../App.scss";
+
+.popup__overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transition:
+    visibility 0.5s,
+    opacity 0.5s ease-in;
+  background-color: $popup-background;
+  opacity: .5;
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,31 @@
+.popup {
+    width: 500px;
+    // height: 468px;
+    position: fixed;
+    z-index: 2;
+    top: auto;
+    left: auto;
+    background-color: white;
+    border-radius: 16px;
+}
+.popup__close {
+    position: absolute;
+    background-image: url(../../assets/icons/close-button.svg);
+    background-repeat: no-repeat; right: 24px; top: 29px;
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.popup__title {
+}
+.popup__info-box {
+}
+.popup__label {
+}
+.popup__data {
+}
+.popup__info-box__bottom {
+}

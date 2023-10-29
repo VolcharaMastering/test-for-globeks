@@ -1,1 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 80px auto;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
 
+$proxima-font: proxima-nova, sans-serif;
+
+@mixin font-styles($font-family) {
+  font-family: $font-family;
+}
+
+$main-color: #262c40;
+$text-color: #8189a3;
+$popup-background: #BCC3D0;
+
+@mixin h1-card {
+  @include font-styles($proxima-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $main-color;
+}
+@mixin text-card {
+  @include font-styles($proxima-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+}
+@mixin text-popup {
+  @include font-styles($proxima-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+}
+@mixin label-popup {
+  @include font-styles($proxima-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: $main-color;
+}
