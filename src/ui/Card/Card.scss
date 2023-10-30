@@ -6,10 +6,10 @@
   max-width: 357px;
   min-width: 300px;
   height: 314px;
-  padding: 24px;
   border-radius: 16px;
   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  padding: 24px;
   margin: 0;
 }
 .card:hover {
@@ -19,11 +19,13 @@
 .card-title {
   @include h1-card;
 }
-.card-mail__box {
-  background: url(../../assets/icons/mail-icon.svg) left 8px top 50% / 20px
-    no-repeat;
+.card__mail-box {
+  background: url(../../assets/icons/mail-icon.svg) left 0 top 10px no-repeat;
 }
-.card-phone__box {
-  background: url(../../assets/icons/mobile-icon.svg) left 8px top 50% / 20px
-    no-repeat;
+.card__phone-box {
+  background: url(../../assets/icons/mobile-icon.svg) left 0 top 10px no-repeat;
+}
+.card__values {
+  @include text-card;
+  padding-left: 34px;
 }

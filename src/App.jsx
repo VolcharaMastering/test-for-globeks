@@ -36,6 +36,8 @@ function App() {
   useEffect(() => {
     if (searchRequest){
       getCardsFromApi(false);
+    }else{
+    getCardsFromApi(true);
     }
   }, [searchRequest]);
 

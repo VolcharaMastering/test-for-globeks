@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect,useState } from "react";
+import "./SearchBar.scss"
 
 function SearchBar({ findCard }) {
   const [searchString, setSearchString] = useState("");
@@ -11,9 +11,7 @@ function SearchBar({ findCard }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (searchString.length >= 1) {
       findCard(searchString);
-    }
   };
 
   useEffect(() => {
