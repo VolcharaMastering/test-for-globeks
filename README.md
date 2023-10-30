@@ -1,8 +1,32 @@
-# React + Vite
+## Тестовый проект для Глобэкс АйТи.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Задание**  
+Сверстать по макету отчет. В отчете вывести список юзеров. 
+На странице есть поиск по юзерам. При вводе в строке поиска список фильтруется.  При клике по карточке выводить в pop-up дополнительную информацию по юзеру. При нажатии вне окна с информацией или крестик окно закрывается.
+Список юзеров получаем с бэкенда. Для этого нужно установить  и запустить локально сервер. Ссылка будет такой http://127.0.0.1:3000. Для получения всего списка отправляем запрос без параметров, для получения совпадений ФИО со строкой ввода добавляем параметры query (term), например http://127.0.0.1:3000?term=fer
+- [Ссылка на макет в Figma]https://www.figma.com/file/sVohAvXP1UpHzN3MMLwmkB/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-30080?node-id=0%3A1&t=kenPBeTH1t4zLitJ-0
+- [Ссылка на архив в бэкендом]https://drive.google.com/file/d/1bRxaW02JMJA1Z4CBWLv_-j6UzeHSrzJ_/view?usp=sharing
+ 
 
-Currently, two official plugins are available:
+**Использованные технологии** 
+- React.js 
+- Vite.js *Настройка среды разработки*
+- PNPM *Скоростной менеджер npm пакетов*
+- SASS *CSS препроцессор для удобства*
+- БЭМ *именование классов CSS*
+- Redux-toolkit *В данном проекте применялся для управления попапом и передачи данных выбранной карточки в попап*
+- Axios *для запросов в API*
+- Prettier и Eslint *Для стандартизации и форматирования кода*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+*Протестирован в браузерах Mozzila Firefox, Google Chrome и Vivaldi (windows).*
+
+**Запуск**  
+- Скопировать репозиторий на локальную машину *git clone git@github.com:VolcharaMastering/test-for-globeks.git*
+- Зайти в директорию globeks-test (cd globeks-test), выполнить команду "pnpm install". Дождаться окончания установки пакетов.
+- Выполнить команду "pnpm run dev".
+- Пройти в браузере по ссылке http://localhost:5173/
+
+
+## Статус:   
+Завершён  
