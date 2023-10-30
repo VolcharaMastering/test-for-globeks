@@ -6,7 +6,8 @@
 Список юзеров получаем с бэкенда. Для этого нужно установить  и запустить локально сервер. Ссылка будет такой http://127.0.0.1:3000. Для получения всего списка отправляем запрос без параметров, для получения совпадений ФИО со строкой ввода добавляем параметры query (term), например http://127.0.0.1:3000?term=fer
 - [Ссылка на макет в Figma](https://www.figma.com/file/sVohAvXP1UpHzN3MMLwmkB/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-30080?node-id=0%3A1&t=kenPBeTH1t4zLitJ-0)
 - [Ссылка на архив в бэкендом](https://drive.google.com/file/d/1bRxaW02JMJA1Z4CBWLv_-j6UzeHSrzJ_/view?usp=sharing)
- 
+ **Задание 2**
+  В директории task2 [Ссылка](https://github.com/VolcharaMastering/test-for-globeks/tree/main/task2)
 
 **Использованные технологии** 
 - React.js 
