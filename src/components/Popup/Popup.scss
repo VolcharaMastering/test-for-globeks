@@ -1,18 +1,23 @@
+@import "../../App.scss";
 .popup {
-    width: 500px;
-    // height: 468px;
-    position: fixed;
-    z-index: 2;
-    top: auto;
-    left: auto;
-    background-color: white;
-    border-radius: 16px;
+  width: 500px;
+  // height: 468px;
+  position: fixed;
+  z-index: 2;
+  top: auto;
+  left: auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
 }
 .popup__close {
-    position: absolute;
-    background-image: url(../../assets/icons/close-button.svg);
-    background-repeat: no-repeat; right: 24px; top: 29px;
-    padding: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../../assets/icons/close-button.svg);
+  background-repeat: no-repeat;
+  right: 24px;
+  top: 29px;
   border: none;
   font: inherit;
   color: inherit;
@@ -20,12 +25,37 @@
   cursor: pointer;
 }
 .popup__title {
+  @include h1-card;
+  margin: 0;
+}
+.popup__List {
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
 }
 .popup__info-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 .popup__label {
+  width: 177px;
+  @include label-popup;
+  margin: 0;
+}
+.popup__label_last {
+  @include label-popup;
+  width: 100%;
+  margin: 40px 0 0;
 }
 .popup__data {
+  width: 275px;
+  @include text-popup;
+  margin: 14px 0 0;
+}
+.popup__data_last {
+  width: 100%;
 }
 .popup__info-box__bottom {
+  width: 100%;
 }

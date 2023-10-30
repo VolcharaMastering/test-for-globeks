@@ -12,7 +12,7 @@ const getCards = async () => {
   }
 };
 
-const getCardByValue = async ( searchValue ) => {
+const getCardByValue = async (searchValue) => {
   try {
     const response = await axios.get(`${url}?term=${searchValue}`);
     return response;

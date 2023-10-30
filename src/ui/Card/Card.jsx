@@ -18,10 +18,10 @@ function Card({ card }) {
     <div className="card" onClick={() => handleCheckCard(card)}>
       <h1 className="card__title">{card.name}</h1>
       <div className="card__mail-box">
-        <p>{card.email}</p>
+        <p  className="card__values">{card.email}</p>
       </div>
       <div className="card__phone-box">
-        <p>{card.phone}</p>
+        <p className="card__values">{card.phone}</p>
       </div>
     </div>
   );

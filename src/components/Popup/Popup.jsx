@@ -17,9 +17,9 @@ function Popup() {
     <>
     <PopupOverlay onClose={handleClosePopup} />
       <section className="popup">
-        <button className='popup__close' />
+        <button className='popup__close' onClick={handleClosePopup}  />
       <h1 className="popup__title">{showCard.name}</h1>
-      <ul>
+      <ul className="popup__List">
         <li className="popup__info-box">
           <p className="popup__label">Телефон:</p>
           <p className="popup__data">{showCard.phone}</p>
@@ -42,8 +42,8 @@ function Popup() {
         </li>
       </ul>
       <div className="popup__info-box__bottom">
-      <p className="popup__label">Дополнительная информация:</p>
-      <p className="popup__data">{showCard.address}</p>
+      <p className="popup__label_last">Дополнительная информация:</p>
+      <p className="popup__data_last">{showCard.address}</p>
       </div>
     </section>
     </>
